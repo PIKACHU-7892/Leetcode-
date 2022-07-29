@@ -8,12 +8,9 @@ public:
         int flag2 = 1 ;
         for(int i = 0 ; i<s.size();i++)
         {
-            if(s[i]==' ' && flag2)
+            if(s[i]==' ' && flag)
             {
-                if(!flag)
-                {
-                    break;
-                }
+                
                 continue;
             }
             if(s[i]=='+' && flag)
@@ -31,7 +28,7 @@ public:
             if(isdigit(s[i]))
             {
                 flag =0;
-                flag2 = 0;
+                
             }
          if(!isdigit(s[i]))
              {
